@@ -1,0 +1,67 @@
+Level Accomlished:
+    Aiming for A+
+
+Bullet-Point Summary:
+
+    Important!!!
+    Sound will only work on windows machines
+    I kept the 10 enemies, but game works more smoothly with 5
+
+    Also , please note a couple deviations from the rules
+    (1) The alpha alien is not killable, but will get enraged and come closer
+        if fired upon. It will still kill on contact with floor or player.
+    (2) Aliens shoot own projectiles. Alpha damage *3 to barrier
+    (3) Speed will increase with every wave of aliens
+    
+    Classes:
+
+        I didnt end up really needing the classes I created, but kept them
+        around for flexibility.
+        
+        Enemy:
+            Creates a hostile turtle, defaulting to the little alien image
+            Attributes
+                health - health points (didnt end up using)
+                alive - whther or not this object is considered 'in play'
+                class global attribute - enemy_speed
+            Methods
+                __init__, __str__, & __eg__
+                is_collition - finds distance between itself and another turtle
+                                returns true if close
+
+        Player
+            Creates a player at the botton of the screen
+            Attributes
+                player_speed - speed at which the ship moves on arrow keys
+                health - also didnt end up using
+            Methods
+                __init__, __str__, & __eg__
+                is_collition - finds distance between itself and another turtle
+                                returns true if close
+
+        Bullet
+            Ctreates a bullet
+            Attributes
+                state_a - whether the bullet is in the process of firing
+            Methods
+                is_collision - finds distance between itself and another turtle
+                                returns true if close
+
+    Data Structures:
+        
+        I got away with just working with lists on this one
+    
+    Functions:
+        
+        def fire_bullet()
+            takes no parmas. switches state of bullet to active, and sets location
+
+Summary:
+    
+    I wrote no functions that needed unit testing. I checked as much as I could
+    as I coded, making sure each type of turtle was collidable and triggered the
+    right outcomes.
+
+    aliens, spaceship, barriers and projectiles I drew myself
+    background and sound of web    
+                
